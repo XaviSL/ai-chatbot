@@ -34,6 +34,7 @@ export default async function SharePage({ params }: SharePageProps) {
   }
 
   const uiState: UIState = getUIStateFromAIState(chat)
+  
 
   return (
     <>

@@ -1,4 +1,5 @@
 import { Message } from 'ai'
+import { IMessage } from './context/chatbotcontext'
 
 export interface Chat extends Record<string, any> {
   id: string

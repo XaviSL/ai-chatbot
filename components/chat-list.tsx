@@ -15,6 +15,7 @@ export function ChatList({ messages, session, isShared }: ChatList) {
     return null
   }
 
+
   return (
     <div className="relative mx-auto max-w-2xl px-4">
       {!isShared && !session ? (
