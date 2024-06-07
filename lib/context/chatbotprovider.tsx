@@ -7,10 +7,10 @@ interface IChatbotProviderProps {
   children: React.ReactNode;
 }
 
-const endpoint = 'https://supertruth-chatbot.azurewebsites.net/api/supertruthchat'
+const endpoint = process.env.NEXT_PUBLIC_AZURE_ENDPOINT as string
 const headers = {
   'Content-Type': 'application/json',
-  'x-functions-key': 'up-Yzd1Zc-mpfYEO7zGARGMv0COmR_1yjkzBgDfhsDEcAzFumDEQLA=='
+  'x-functions-key': process.env.NEXT_PUBLIC_AZURE_KEY as string
 }
 
 const ChatbotProvider: React.FC<IChatbotProviderProps> = ({ children }) => {
